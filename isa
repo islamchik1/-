@@ -1,0 +1,188 @@
+
+html = """<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ОсОО «Ырыс Жол Курулуш»</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #0d1b2a, #1b263b, #415a77);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 42px;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+    nav {
+      background: white;
+      padding: 18px;
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      border-bottom: 2px solid #d6d9de;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0d1b2a;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #1b76ff;
+    }
+    section {
+      padding: 45px 20px;
+      max-width: 1150px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      margin-bottom: 40px;
+      border: 1px solid #e2e6eb;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      animation: fadein 0.6s ease;
+    }
+    @keyframes fadein {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    h2 {
+      color: #0d1b2a;
+      font-size: 30px;
+      margin-bottom: 15px;
+      border-left: 6px solid #1b76ff;
+      padding-left: 12px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+    }
+    .contact-box {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+    footer {
+      background: #0d1b2a;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+      font-size: 17px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ОсОО «Ырыс Жол Курулуш»</h1>
+  <p>Профессиональное дорожное строительство по всему Кыргызстану</p>
+</header>
+
+<nav>
+  <a href="#about">О компании</a>
+  <a href="#services">Услуги</a>
+  <a href="#tech">Техника</a>
+  <a href="#gallery">Фото работ</a>
+  <a href="#contacts">Контакты</a>
+  <a href="#map">Карта</a>
+</nav>
+
+<section id="about" class="card">
+  <h2>О компании</h2>
+  <p>
+    ОсОО «Ырыс Жол Курулуш» — современная и надёжная компания, занимающаяся строительством и реконструкцией автомобильных дорог.
+    Мы работаем по всей территории Кыргызстана, выполняя проекты любого уровня сложности.
+  </p>
+  <p>
+    В компании работает квалифицированный персонал, а также используется современная техника, что позволяет обеспечивать высокое качество работ и соблюдение сроков.
+  </p>
+  <h3>Наши цели:</h3>
+  <ul>
+    <li>Развитие дорожной инфраструктуры страны</li>
+    <li>Внедрение современных технологий строительства</li>
+    <li>Повышение качества дорог и безопасности движения</li>
+  </ul>
+</section>
+
+<section id="services" class="card">
+  <h2>Наши услуги</h2>
+  <ul>
+    <li>Строительство автомобильных дорог</li>
+    <li>Ремонт и реконструкция покрытия</li>
+    <li>Асфальтирование улиц, дворов, парковок</li>
+    <li>Строительство тротуаров, установка бордюров</li>
+    <li>Дренажные системы, кюветы, водоотводы</li>
+    <li>Подготовка основания (щебень, песок, выравнивание)</li>
+    <li>Планировка территорий</li>
+    <li>Спецтехника в аренду</li>
+  </ul>
+</section>
+
+<section id="tech" class="card">
+  <h2>Наша техника</h2>
+  <ul>
+    <li>Асфальтоукладчики</li>
+    <li>Грейдеры</li>
+    <li>Катки (грунтовые и асфальтовые)</li>
+    <li>Экскаваторы</li>
+    <li>Фронтальные погрузчики</li>
+    <li>Самосвалы</li>
+  </ul>
+</section>
+
+<section id="gallery" class="card">
+  <h2>Фото работ</h2>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/450x280?text=Строительство+дороги">
+    <img src="https://via.placeholder.com/450x280?text=Укладка+асфальта">
+    <img src="https://via.placeholder.com/450x280?text=Спецтехника+на+объекте">
+    <img src="https://via.placeholder.com/450x280?text=Ремонт+участка">
+  </div>
+</section>
+
+<section id="contacts" class="card">
+  <h2>Контакты</h2>
+  <div class="contact-box">
+    <p><strong>Телефон:</strong> 0704 289 509</p>
+    <p><strong>Email:</strong> hhh2837692@gmail.com</p>
+    <p><strong>Адрес:</strong> г. Бишкек, ул. Примерная 12</p>
+  </div>
+</section>
+
+<section id="map" class="card">
+  <h2>Мы на карте</h2>
+  <iframe width="100%" height="350" style="border:0; border-radius:12px;"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.4472027288!2d74.588!3d42.876!2m3!1f0!2f0!3f0!"
+    allowfullscreen></iframe>
+</section>
+
+<footer>
+  © 2025 ОсОО «Ырыс Жол Курулуш». Все права защищены.
+</footer>
+
+</body>
+</html>
